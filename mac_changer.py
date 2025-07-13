@@ -38,6 +38,7 @@ if not args.interface or not args.new_mac:
     parser.print_help()
   exit()
 
+# Show current MAC
 current_mac = get_current_mac(args.interface)
 print(f"Current MAC: {current_mac}")
 
