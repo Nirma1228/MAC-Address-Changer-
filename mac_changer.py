@@ -19,3 +19,5 @@ def change_mac(interface, new_mac):
          subprocess.call(["sudo", "ip", "link", "set", "dev", interface, "address", new_mac])
          subprocess.call(["sudo", "ip", "link", "set", "dev", interface, "up"])
          print(f"[+] MAC address changed to {new_mac}")
+ except Exception as e:
+        print(f"[-] Error changing MAC: {e}")
