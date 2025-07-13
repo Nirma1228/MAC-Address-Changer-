@@ -3,6 +3,7 @@ import subprocess
 import re
 import argparse
 
+# Get the current MAC address of a network interface
 def get_current_mac(interface):
     try:
         result = subprocess.check_output(["ip", "link", "show", interface], encoding="utf-8")
