@@ -9,3 +9,4 @@ def get_current_mac(interface):
         if mac_address:
             return mac_address.group(1)
         else:
+            print("[-] Could not read MAC address.")
