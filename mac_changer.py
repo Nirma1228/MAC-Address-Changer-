@@ -42,6 +42,8 @@ if not args.interface or not args.new_mac:
 current_mac = get_current_mac(args.interface)
 print(f"Current MAC: {current_mac}")
 
+
+# Change MAC
 change_mac(args.interface, args.new_mac)
 
 new_mac = get_current_mac(args.interface)
