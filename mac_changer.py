@@ -21,3 +21,8 @@ def change_mac(interface, new_mac):
          print(f"[+] MAC address changed to {new_mac}")
  except Exception as e:
         print(f"[-] Error changing MAC: {e}")
+
+parser = argparse.ArgumentParser(description="MAC Address Changer Tool")
+parser.add_argument("-i", "--interface", dest="interface", help="Network interface to change MAC (e.g. eth0)")
+parser.add_argument("-m", "--mac", dest="new_mac", help="New MAC address (e.g. 00:11:22:33:44:55)")
+args = parser.parse_args()
