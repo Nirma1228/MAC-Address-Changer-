@@ -10,3 +10,5 @@ def get_current_mac(interface):
             return mac_address.group(1)
         else:
             print("[-] Could not read MAC address.")
+    except subprocess.CalledProcessError:
+        print("[-] Error reading interface info.")
