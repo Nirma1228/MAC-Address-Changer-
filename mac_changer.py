@@ -39,3 +39,5 @@ change_mac(args.interface, args.new_mac)
 new_mac = get_current_mac(args.interface)
 if new_mac == args.new_mac:
     print("[+] MAC was successfully changed.")
+else:
+    print("[-] MAC did not change.")
