@@ -29,3 +29,4 @@ args = parser.parse_args()
 
 if not args.interface or not args.new_mac:
     parser.print_help()
+  exit()
