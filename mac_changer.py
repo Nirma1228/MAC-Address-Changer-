@@ -12,3 +12,5 @@ def get_current_mac(interface):
             print("[-] Could not read MAC address.")
     except subprocess.CalledProcessError:
         print("[-] Error reading interface info.")
+
+def change_mac(interface, new_mac):
