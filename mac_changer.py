@@ -15,3 +15,6 @@ def get_current_mac(interface):
 
 def change_mac(interface, new_mac):
      try:
+         subprocess.call(["sudo", "ip", "link", "set", "dev", interface, "down"])
+         subprocess.call(["sudo", "ip", "link", "set", "dev", interface, "address", new_mac])
+         subprocess.call(["sudo", "ip", "link", "set", "dev", interface, "up"])
