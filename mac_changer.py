@@ -26,3 +26,6 @@ parser = argparse.ArgumentParser(description="MAC Address Changer Tool")
 parser.add_argument("-i", "--interface", dest="interface", help="Network interface to change MAC (e.g. eth0)")
 parser.add_argument("-m", "--mac", dest="new_mac", help="New MAC address (e.g. 00:11:22:33:44:55)")
 args = parser.parse_args()
+
+if not args.interface or not args.new_mac:
+    parser.print_help()
