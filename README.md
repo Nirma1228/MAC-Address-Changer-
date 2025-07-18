@@ -10,3 +10,9 @@ This is a simple Python command-line tool that allows you to **view and change t
 - Works on Linux systems using `ip` command
 
 ## 🚀 How to Use
+
+### 📦 Prerequisites
+
+- Python 3 installed
+- Linux system (Tested on Ubuntu)
+- Run with `sudo` permissions (required to change MAC)
